@@ -1,0 +1,52 @@
+body {
+    background-color: beige;
+
+}
+
+
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    animation-name: fly;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+@keyframes fly {
+    0% {
+        top: 0;
+        left: 0;
+        transform: (0deg)}
+    25% {
+        transform: (90deg);
+        top: 0;
+        left: 85%;
+    }
+
+    50% {
+        transform: (180deg);
+        top: 75%;
+        left: 85%;
+    }
+
+    75% {
+        transform: (360deg);
+        top: 75%;
+        left: 0;
+    }
+
+
+    100% {
+        transform: (0deg);
+        top: 0;
+        left: 0;
+
+    }
+}
